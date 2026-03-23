@@ -28,7 +28,7 @@ binary success or failure.  These packs are also independent of each other[^1]. 
 A Binomial Distribution is the probability distribution of the number of successes in a sequence of independent events that can only have the chances of passing or failing. Essentially, it's the disribution of the amount of successes given a fixed amount of trials and can be represented by the formula:
 
 
-$`f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}`$
+$`B(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}`$
 
 for $`{{k{{=}} 0, 1, 2, ..., n}}`$
 
@@ -75,6 +75,45 @@ Where R is the given rarity of the card (Super, Ultra,Collector's,etc)
 So let's use this to map out the probability distribution for a specific card I want. Let's use K9-17 "Ripper" at Super Rare rarity for the rest of these calculations
 
 ![K9_17](./assets/330px-K917Ripper-JUSH-EN-SR-1E.png)
+
+### Example Calculation: Odds of pulling K9-17 “Ripper” at Super Rarity from a single pack
+
+$`P(x) = \frac{1}{20} * \frac{1}{5} = \frac{1}{100} = 0.01 = 1%`$
+
+Now what we have the probability for a single pack let's use the Binomial Distribution to simulate opening multiple packs. In this case let's use a n = 24 since that's as many packs as you would get in a box
+
+### Probability for pulling a single K9-17 “Ripper” at Super Rare from a single pack Repeatedly
+In this instance let’s simulate if I had bought a bunch of packs and started opening. How likely is it for me to pull K9-17 “Ripper” at least once?
+$`B(k,n,p) = B(1,24,P(x)) = 0.1904 = 19% `$
+
+And here is the probability distribuion as well 
+
+| X | Pr[X = x] | Cumulative Pr[X ≤ x] | Pr[X > x] |
+|---|-----------|----------------------|-----------|
+| 0 | 0.78567815 | 0.78567815 | 0.21432187 |
+| 1 | 0.19046743 | 0.97614557 | 0.02385443 |
+| 2 | 0.022125004 | 0.9982706 | 0.0017294268 |
+| 3 | 0.0016388892 | 0.99990946 | 0.000090537644 |
+| 4 | 0.00008691079 | 0.99999636 | 0.0000036268505 |
+| 5 | 0.0000035115472 | 0.9999999 | 0.000000115303436 |
+| 6 | 0.00000011232221 | 1 | 0.0000000029812242 |
+| 7 | 0.00000000291746 | 1 | 0.000000000063763994 |
+| 8 | 0.00000000006262225 | 1 | 0.0000000000011417534 |
+| 9 | 0.0000000000011245297 | 1 | 0.000000000000017208457 |
+| 10 | 0.000000000000017038329 | 1 | 0.0000000000000002220446 |
+| 11 | 0.00000000000000021904189 | 1 | 0.0000000000000001110223 |
+| 12 | 0.000000000000000002396923 | 1 | 0.0000000000000001110223 |
+| 13 | 0.000000000000000000022348932 | 1 | 0.0000000000000001110223 |
+| 14 | 0.00000000000000000000017737247 | 1 | 0.0000000000000001110223 |
+| 15 | 0.0000000000000000000000011944274 | 1 | 0.0000000000000001110223 |
+| 16 | 0.0000000000000000000000000067865195 | 1 | 0.0000000000000001110223 |
+| 17 | 0.000000000000000000000000000032259155 | 1 | 0.0000000000000001110223 |
+| 18 | 0.00000000000000000000000000000012671947 | 1 | 0.0000000000000001110223 |
+| 19 | 0.0000000000000000000000000000000004042088 | 1 | 0.0000000000000001110223 |
+| 20 | 0.0000000000000000000000000000000000010207293 | 1 | 0.0000000000000001110223 |
+| 21 | 0.000000000000000000000000000000000000001963885 | 1 | 0.0000000000000001110223 |
+| 22 | 0.000000000000000000000000000000000000000002705 | 1 | 0.0000000000000001110223 |
+| 23 | 0.000000000000000000000000000000000000000000003 | 1 | 0.0000000000000001110223 |
 
 
 [^1]: This only applies to individual packs, not boxes as boxes have fixed rates. You will always pull at least two Secret Rares from a box. But let's ignore them for this line of questioning. 
