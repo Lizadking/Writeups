@@ -87,6 +87,7 @@ In this instance let’s simulate if I had bought a bunch of packs and started o
 $`B(k,n,p) = B(1,24,P(x)) = 0.1904 = 19\% `$
 
 And here is the probability distribuion as well for other possible successes 
+(If you want to see how these numbers were calculated please check the tooling made for this [here](https://github.com/Lizadking/YGOJH_Set_Probability))
 
 | X | Pr[X = x] | Cumulative Pr[X ≤ x] | Pr[X > x] |
 |---|-----------|----------------------|-----------|
