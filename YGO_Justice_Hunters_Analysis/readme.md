@@ -30,9 +30,11 @@ A Binomial Distribution is the probability distribution of the number of success
 
 $`f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}`$
 
-for $`{{math|''k'' {{=}} 0, 1, 2, ..., ''n''}}`$
+for $`{{k{{=}} 0, 1, 2, ..., ''n''}}`$
 
-Using n as the number of packs we open and k being the number of succesess we can evaluate the probability of 
+Using n as the number of packs we open and k being the number of succesess we can evaluate the probability of pulling a specifc card at a specific rarity above Rare
+
+But the problem now is to calculate the probability in general, as well as specify what above rare really means 
 
 ## How Rare is a Rare? 
 
