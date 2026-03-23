@@ -23,14 +23,14 @@ Assuming an equally randomly distributed pack, if the initial six cards are guar
 
 ## Catching a Scent: Choosing a Method
 In order to evaluate this question I needed some way to model the situation. I open a pack, either I pull the card I've been looking for or I do not. It is a 
-binary success or failure. In addition I needed a way to simulate opening repeated packs and once again either I succeed or fail. These are the perfect conditions that met using what is called a **Binomial Distribution**. 
+binary success or failure. In addition I needed a way to simulate opening repeated packs and once again either I succeed or fail. These packs are also independent of each other[^1] These are the perfect conditions that met using what is called a **Binomial Distribution**. 
 
 A Binomial Distribution is the probability distribution of the number of successes in a sequence of independent events that can only have the chances of passing or failing. Essentially, it's the disribution of the amount of successes given a fixed amount of trials and can be represented by the formula:
 
 
 $`f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}`$
 
-for $`{{k{{=}} 0, 1, 2, ..., ''n''}}`$
+for $`{{k{{=}} 0, 1, 2, ..., n}}`$
 
 Using n as the number of packs we open and k being the number of succesess we can evaluate the probability of pulling a specifc card at a specific rarity above Rare
 
@@ -50,5 +50,6 @@ But for our concerns there are only five rarities that are of any note as this s
 - Collector's Rare (1:84)
 - Starlight Rare (1:576)
 
+[^1]: This only applies to individual packs, not boxes as boxes have fixed rates. You will always pull at least two Secret Rares from a box. But let's ignore them for this line of questioning. 
 ### Sources 
 https://en.wikipedia.org/wiki/Binomial_distribution
