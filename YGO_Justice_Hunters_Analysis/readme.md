@@ -26,7 +26,7 @@ In order to evaluate this question I needed some way to model the situation. I o
 binary success or failure. In addition I needed a way to simulate opening repeated packs and once again either I succeed or fail. These are the perfect conditions that met using what is called a **Binomial Distribution**. 
 
 A Binomial Distribution is the probability distribution of the number of successes in a sequence of independent events that can only have the chances of passing or failing. Essentially, it's the disribution of the amount of successes given a fixed amount of trials and can be represented by the formula:
-$f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
+$\f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 
 ## How Rare is a Rare? 
 
