@@ -114,8 +114,19 @@ And here is the probability distribuion as well for other possible successes
 | 21 | 0.000000000000000000000000000000000000001963885 | 1 | 0.0000000000000001110223 |
 | 22 | 0.000000000000000000000000000000000000000002705 | 1 | 0.0000000000000001110223 |
 | 23 | 0.000000000000000000000000000000000000000000003 | 1 | 0.0000000000000001110223 |
-
 ![K9_17](./assets/Figure_1.png)
+## Final Verdict 
+Now that we know there is an aproximately 19% chance of pulling the card from 24 packs, let's see how much it would cost to buy the card online and do a comparison.
+
+![K9_17](./assets/unnamdsdsded.png)
+
+Considering a box of Justice Hunters is currently $44.99 MSRP and according to our calculations a box has at least a 20% chance of possibly opening one (or four) vs the price of an ungraded. 
+
+It’s a complete waste of time and money to try and pull packs for this card. If you pay for a box to pull for her, you have overpaid for her by over 115%, just buy a single 
+
+Yes it's obvious from the start that this is a waste of money, however sometimes it is nice to see **just** how much of a waste these things can be.
+
+
 [^1]: This only applies to individual packs, not boxes as boxes have fixed rates. You will always pull at least two Secret Rares from a box. But let's ignore them for this line of questioning. 
 ### Sources 
 https://en.wikipedia.org/wiki/Binomial_distribution
