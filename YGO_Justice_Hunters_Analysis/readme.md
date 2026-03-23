@@ -1,5 +1,5 @@
 
-# Hot Singles in your Pack: An Analysis of Yu-Gi-Oh Card Probabilities Using Binomial Probability
+# Hot Singles in your Pack: An Analysis of Yu-Gi-Oh Card Probabilities Using Binomial Probability (v1 March 2026)
 ![Justice Hunters Set](./assets/OIP-1938437927.jpg)
 ## 
 
