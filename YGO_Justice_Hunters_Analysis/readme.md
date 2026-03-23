@@ -1,6 +1,6 @@
 
 # Hot Singles in your Pack: An Analysis of Yu-Gi-Oh Card Probabilities Using Binomial Probability
-
+![K9_set_information](./assets/OIP-1938437927.jpg)
 ## 
 
 Recently I've made the grave mistake of getting into playing Yu-Gi-Oh. And it all started from buying a simple box of one of the latest sets of 2025 *Justice Hunters*, and I wanted to build a deck using the set's newest Arcetypes, K9 but these cards aren't always guarenteed. The rates as specified by Konami for this archetype are typically *Secret Rares*. This leads to the issue, do I spend my time buying packs opening them and seeing if I pull more K9 cards for my deck,
@@ -26,7 +26,13 @@ In order to evaluate this question I needed some way to model the situation. I o
 binary success or failure. In addition I needed a way to simulate opening repeated packs and once again either I succeed or fail. These are the perfect conditions that met using what is called a **Binomial Distribution**. 
 
 A Binomial Distribution is the probability distribution of the number of successes in a sequence of independent events that can only have the chances of passing or failing. Essentially, it's the disribution of the amount of successes given a fixed amount of trials and can be represented by the formula:
+
+
 $`f(k,n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}`$
+
+for $`{{math|''k'' {{=}} 0, 1, 2, ..., ''n''}}`$
+
+Using n as the number of packs we open and k being the number of succesess we can evaluate the probability of 
 
 ## How Rare is a Rare? 
 
@@ -34,7 +40,7 @@ Okay there are a lot of rarities in Yu-Gi-Oh, like a lot a lot, as in well over 
 And for this write-up, they don't matter. 
 
 We just need to understand a rarity is simply a card that is printed at less often than other cards which makes them rare. But the issue is the information online about the rates these cards are printed at is inconsitent no one online seems to be able to coroborate each other's numbeers (sometimes you will have to scour Byzinte era fourms for some guy's "trust me bro" ratios) and the numbers are at best estimates by fans. 
-
+ 
 But for our concerns there are only five rarities that are of any note as this set only has five rarities and they are and at the ratios (cards/booster pack):
 - Rare (1:1)
 - Super Rare (1:5)
