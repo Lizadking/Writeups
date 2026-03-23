@@ -78,15 +78,15 @@ So let's use this to map out the probability distribution for a specific card I 
 
 ### Example Calculation: Odds of pulling K9-17 “Ripper” at Super Rarity from a single pack
 
-$`P(x) = \frac{1}{20} * \frac{1}{5} = \frac{1}{100} = 0.01 = 1%`$
+$`P(x) = \frac{1}{20} * \frac{1}{5} = \frac{1}{100} = 0.01 = 1\%`$
 
 Now what we have the probability for a single pack let's use the Binomial Distribution to simulate opening multiple packs. In this case let's use a n = 24 since that's as many packs as you would get in a box
 
 ### Probability for pulling a single K9-17 “Ripper” at Super Rare from a single pack Repeatedly
 In this instance let’s simulate if I had bought a bunch of packs and started opening. How likely is it for me to pull K9-17 “Ripper” at least once?
-$`B(k,n,p) = B(1,24,P(x)) = 0.1904 = 19% `$
+$`B(k,n,p) = B(1,24,P(x)) = 0.1904 = 19\% `$
 
-And here is the probability distribuion as well 
+And here is the probability distribuion as well for other possible successes 
 
 | X | Pr[X = x] | Cumulative Pr[X ≤ x] | Pr[X > x] |
 |---|-----------|----------------------|-----------|
@@ -115,7 +115,7 @@ And here is the probability distribuion as well
 | 22 | 0.000000000000000000000000000000000000000002705 | 1 | 0.0000000000000001110223 |
 | 23 | 0.000000000000000000000000000000000000000000003 | 1 | 0.0000000000000001110223 |
 
-
+![K9_17](./assets/Figure_1.png)
 [^1]: This only applies to individual packs, not boxes as boxes have fixed rates. You will always pull at least two Secret Rares from a box. But let's ignore them for this line of questioning. 
 ### Sources 
 https://en.wikipedia.org/wiki/Binomial_distribution
